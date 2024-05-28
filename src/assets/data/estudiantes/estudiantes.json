@@ -1,0 +1,27 @@
+
+
+
+[
+  {
+    "idEstudiante": 1,
+    "nombre": "Juan",
+    "apellido": "Perez",
+    "fechaNacimiento": "",
+    "genero": "Masculino",
+    "documento": 12345678,
+    "email": "",
+    "ciudad": "Buenos Aires"
+  },
+  {
+    "idEstudiante": 2,
+    "nombre": "Ana",
+    "apellido": "Gomez",
+    "fechaNacimiento": "",
+    "genero": "Femenino",
+    "documento": 87654321,
+    "email": "",
+    "ciudad": "Córdoba"
+  }
+]
+
+

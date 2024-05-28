@@ -1,0 +1,106 @@
+/*importo las var en style*/
+
+
+
+.bs-icon {
+  --bs-icon-size: .75rem;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--bs-icon-size);
+  width: calc(var(--bs-icon-size) * 2);
+  height: calc(var(--bs-icon-size) * 2);
+  color: var(--bs-primary);
+}
+
+.bs-icon-xs {
+  --bs-icon-size: 1rem;
+  width: calc(var(--bs-icon-size) * 1.5);
+  height: calc(var(--bs-icon-size) * 1.5);
+}
+
+.bs-icon-sm {
+  --bs-icon-size: 1rem;
+}
+
+.bs-icon-md {
+  --bs-icon-size: 1.5rem;
+}
+
+.bs-icon-lg {
+  --bs-icon-size: 2rem;
+}
+
+.bs-icon-xl {
+  --bs-icon-size: 2.5rem;
+}
+
+.bs-icon.bs-icon-primary {
+  color: var(--bs-white);
+  background: var(--bs-danger);
+}
+
+.bs-icon.bs-icon-primary-light {
+  color: var(--bs-primary);
+  background: rgba(var(--bs-primary-rgb), .2);
+}
+
+.bs-icon.bs-icon-semi-white {
+  color: var(--bs-primary);
+  background: rgba(255, 255, 255, .5);
+}
+
+.bs-icon.bs-icon-rounded {
+  border-radius: .5rem;
+}
+
+.bs-icon.bs-icon-circle {
+  border-radius: 50%;
+}
+
+
+
+/**/
+
+.container-hero {
+  position: relative;
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.container-hero img {
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  filter: brightness(33%);
+  z-index: -1;
+}
+
+.container-title{
+  max-width: 350px;
+}
+
+.container-cards{
+  top: -50px;
+}
+
+
+.container-card{
+ display: flex;align-items: stretch;
+}
+
+.container-card-icon{
+  top: -30px;
+}
+.card-subtitle{
+  color: var(--bs-code-color);
+}
+
+.card-goIt{
+ font-weight: bold;text-decoration: none;
+}

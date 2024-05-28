@@ -1,0 +1,32 @@
+[
+    {
+      "idMateria": 101,
+      "nombre": "Matemáticas Avanzadas",
+      "duracion": "1 semestre",
+      "profesor": "Dr. Carlos López"
+    },
+    {
+      "idMateria": 102,
+      "nombre": "Física Cuántica",
+      "duracion": "2 semestres",
+      "profesor": "Dra. Maria Fernandez"
+    },
+    {
+      "idMateria": 103,
+      "nombre": "Química Orgánica",
+      "duracion": "1 semestre",
+      "profesor": "Dr. Pedro Martinez"
+    },
+    {
+      "idMateria": 104,
+      "nombre": "Historia del Arte",
+      "duracion": "1 semestre",
+      "profesor": "Lic. Julia Gomez"
+    },
+    {
+      "idMateria": 105,
+      "nombre": "Literatura Contemporánea",
+      "duracion": "1 semestre",
+      "profesor": "Prof. Ana Rodriguez"
+    }
+  ]

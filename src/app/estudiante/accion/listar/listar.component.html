@@ -1,0 +1,36 @@
+<div class="tbl">
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido</th>
+        <th scope="col">Fecha de Nacimiento</th>
+        <th scope="col">Género</th>
+        <th scope="col">Documento</th>
+        <th scope="col">Email</th>
+        <th scope="col">Ciudad</th>
+        <th scope="col">Acción</th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr *ngFor="let estudiante of estudianteList">
+        <th scope="row">{{ estudiante.idEstudiante }}</th>
+        <td>{{ estudiante.nombre }}</td>
+        <td>{{ estudiante.apellido }}</td>
+        <td>{{ estudiante.fechaNacimiento | date: 'dd/MM/yyyy' }}</td>
+        <td>{{ estudiante.genero }}</td>
+        <td>{{ estudiante.documento }}</td>
+        <td>{{ estudiante.email }}</td>
+        <td>{{ estudiante.ciudad }}</td>
+        <td>
+          <button class="btn btn-danger" (click)="onEliminar(estudiante.idEstudiante)">
+            <img src="../../../../assets/img/delete.png" alt="Eliminar">
+          </button>
+        </td>
+      </tr>
+    
+    </tbody>
+  </table>
+</div>

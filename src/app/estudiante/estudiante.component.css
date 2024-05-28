@@ -1,0 +1,40 @@
+
+
+.container-button {
+    color: var(--bs-dark-border-subtle);
+    margin: 30px 20px;
+}
+
+.buton-opt {
+    background: var(--bs-primary-border-subtle);
+    border: none;
+}
+
+.button-icon {
+    padding: 0 110px;
+    margin-top: 25px;
+}
+
+.button-icon svg {
+    color: var(--bs-light-text-emphasis);
+    font-size: 105px;
+}
+
+
+@media (max-width: 760px) {
+    .container-opt{
+        max-width: 100%;
+    }
+
+    
+
+    .container-button{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .button-icon{
+        padding: 0 50px;
+        margin: 0;
+    }
+}

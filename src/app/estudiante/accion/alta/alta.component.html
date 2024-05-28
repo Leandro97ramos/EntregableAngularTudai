@@ -1,0 +1,59 @@
+<div class="container">
+    <section>
+        <h1 class="text-center text-capitalize">Application form</h1>
+        <div class="container">
+            <form id="application-form" (submit)="onSubmit($event)">
+                <div class="form-group mb-3">
+                    <div class="row">
+                        <div class="col">
+                            <p><strong>Nombre</strong>&nbsp;<span class="text-danger">*</span></p>
+                            <input class="form-control" type="text" required=""  placeholder="Lean"  [(ngModel)]="nuevoEstudiante.nombre" name="nombre">
+                        </div>
+                        <div class="col">
+                            <p><strong>Apellido</strong>&nbsp;<span class="text-danger">*</span></p>
+                            <input class="form-control" type="text" required="" [(ngModel)]="nuevoEstudiante.apellido" name="apellido" placeholder="Ramos">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group mb-3">
+                    <div class="row">
+                        <div class="col">
+                            <!--Metodo para calcular la edad-->
+                            <p><strong>Fecha de Nacimiento</strong>&nbsp;<span class="text-danger">*</span></p><input
+                                class="form-control" type="date" required="" name="fechaNacimiento" [(ngModel)]="nuevoEstudiante.fechaNacimiento">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group mb-3">
+                    <p><strong>Genero</strong>&nbsp;<span class="text-danger">*</span></p><input class="form-control"
+                        type="text" required="" [(ngModel)]="nuevoEstudiante.genero" name="genero" placeholder="Hombre">
+                </div>
+                <div class="form-group mb-3">
+                    <p><strong>Documento&nbsp;</strong><span class="text-danger">*</span></p><input class="form-control"
+                        type="number" [(ngModel)]="nuevoEstudiante.documento" name="documento" placeholder="7777777777">
+                </div>
+                <div class="form-group mb-3">
+                    <p><strong>Email&nbsp;</strong><span class="text-danger">*</span></p><input class="form-control"
+                        type="email" [(ngModel)]="nuevoEstudiante.email" name="email" placeholder="user@domain.com">
+                </div>
+                <div class="form-group mb-3">
+                    <p><strong>Ciudad de residencia&nbsp;</strong><span class="text-danger">*</span></p><input
+                        class="form-control" type="text" required="" [(ngModel)]="nuevoEstudiante.ciudad" name="ciudad" placeholder="Olavarria">
+
+                </div>
+           
+
+                    
+                <div class="justify-content-center d-flex form-group mb-3">
+                    <div id="submit-btn">
+                        <div class="row">
+                            <button class="btn btn-primary btn-light m-0 rounded-pill px-4" type="submit"
+                               action method="POST" target="hidden_iframe">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+      
+    </section>
+</div>

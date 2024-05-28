@@ -1,5 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import {Estudiante} from '../../../interface/estudiante'
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-alta',
   templateUrl: './alta.component.html',
@@ -7,8 +8,9 @@ import {Estudiante} from '../../../interface/estudiante'
 })
 export class AltaComponent implements OnInit {
   @Output() estudianteAgregado = new EventEmitter<any>();
+  router: any;
 
-  constructor() { }
+  constructor(router: Router) { }
 
   ngOnInit(): void {
   }
@@ -26,9 +28,7 @@ export class AltaComponent implements OnInit {
   onSubmit(event: Event): void {
     console.log('Formulario enviado', this.nuevoEstudiante);
     this.estudianteAgregado.emit(this.nuevoEstudiante);
-
-    event.preventDefault();
-    
+    this.router.navigate(['/listar']);    
   }
 
   

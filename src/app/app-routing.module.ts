@@ -13,6 +13,8 @@ const routes: Routes = [
 //materia
 { path: 'materia', component: MateriaComponent },
 
+
+
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
